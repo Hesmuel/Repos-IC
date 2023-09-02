@@ -1,0 +1,46 @@
+body{
+  display: flex;
+    flex-direction: column; /* Define a direção do flexbox como coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    margin: 0;
+   /* Defina a altura do corpo para ocupar a altura da janela de visualização */
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.careca {
+    margin-top: 20px; /* Espaçamento opcional entre o conteúdo e o botão */
+}
+
+.canudo{
+  background-color: white;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.canudo:hover {
+  background-color: forestgreen;
+}
+
+
+
+
+
