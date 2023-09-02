@@ -47,6 +47,7 @@ body{
   align-items: center;
   justify-content: space-around;
   margin-top: 45px;
+  flex-wrap: wrap;
 }
 
 .conteudo-principal-escrito{
@@ -140,12 +141,20 @@ body{
   
 }
 
-@media screen and (max-width: 768px){
-.produto-container{
-  width:100%;
-  flex-direction: column;
- }
- .cabecalho-imagem{
-   width: 50%;
- }
+@media screen and (max-width: 600px){
+
+.conteudo .conteudo-principal .conteudo-principal-escrito .conteudo-principal-escrito-titulo{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  text-align: center;
+}
+
+.conteudo .conteudo-principal .conteudo-principal-escrito-botao {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
