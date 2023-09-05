@@ -19,8 +19,8 @@ body{
 }
 
 .cabecalho-imagem{
-  width: 8%;
-  height: 72px;
+  width: 5%;
+  height: 45px;
   border-radius: 100%;
 }
 
@@ -33,6 +33,21 @@ body{
   color: white;
   font-weight: 400;
   font-size: 17px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.cabecalho-menu-item:hover{
+  color: forestgreen;
+}
+
+.cabecalho-menu-item::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%
 }
 
 .conteudo{
@@ -92,15 +107,26 @@ body{
   left: 0;
   width: 100%;
   height: 0%
-  background: forestgreen;
-  }
+}
 
 .conteudo-principal-imagem{
   
   width: 30%;
   height: 30%;
+  transition: transform 0.3s ease;
+  
 
 }
+
+.conteudo-principal-imagem:hover {
+  transform: scale(1.2); /* Aumenta a imagem em 10% quando o mouse passa por cima */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.conteudo-principal-imagem:not(:hover) {
+  transform: scale(1); /* Tamanho original (1) */
+}
+
 
 .conteudo-secundario{
   display: flex;
@@ -141,6 +167,11 @@ body{
   
 }
 
+
+
+
+
+
 @media screen and (max-width: 600px){
 
 .conteudo .conteudo-principal .conteudo-principal-escrito .conteudo-principal-escrito-titulo{
@@ -157,4 +188,18 @@ body{
    display: block;
    margin-left: auto;
    margin-right: auto;
+  
+}
+
+.cabecalho-imagem {
+  width: 5%;
+  height: 20%;
+}
+
+.cabecalho-menu-item{
+  font-size: 60%;
+}
+
+.conteudo-secundario-paragrafo{
+  text-align: center;
 }

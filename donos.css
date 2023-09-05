@@ -40,7 +40,19 @@ p{
   background-color: forestgreen;
 }
 
+@media screen and (max-width: 600px){
+  .copa{text-align: center;
+}
 
+.canudo::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%
+}
 
-
+.canudo:hover {
+  background-color: forestgreen;
+}
 
